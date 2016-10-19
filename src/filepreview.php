@@ -84,21 +84,24 @@ class FilePreview {
     const DEFAULT_BAR_BOTTOM = 30;
     const DEFAULT_BAR_PADDING = 10;
 
-    /**
-     * [$filename description]
-     * @var boolean
-     */
-    private $filename = false;
 
     /**
-     * [__constructor description]
-     * @param  boolean $filename [description]
-     * @return [type]            [description]
+     * [create description]
+     * @param  [type] $source      [description]
+     * @param  [type] $destination [description]
+     * @param  [type] $width       [description]
+     * @param  [type] $height      [description]
+     * @return [type]              [description]
      */
-    public function __constructor($filename = false) {
+    public static function create($source, $destination, $width, $height) {
 
+        $instance = new self();
 
+        $image = $instance->renderPreview($filename, $width, $height);
+
+        return $instance->output($image, $destination);
     }
+
 
     /**
      * [output description]
@@ -117,6 +120,7 @@ class FilePreview {
                 break;
         }
 
+        return true;
     }
 
 
