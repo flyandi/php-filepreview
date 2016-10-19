@@ -93,11 +93,11 @@ class FilePreview {
      * @param  [type] $height      [description]
      * @return [type]              [description]
      */
-    public static function create($source, $destination, $width, $height) {
+    public static function create($source, $destination, $width, $height, $mime = false) {
 
         $instance = new self();
 
-        $image = $instance->renderPreview($source, $width, $height);
+        $image = $instance->renderPreview($source, $width, $height, $mime);
 
         return $instance->output($image, $destination);
     }
