@@ -78,9 +78,9 @@ class FilePreview {
      */
     const DEFAULT_WIDTH = 320;
     const DEFAULT_HEIGHT = 240;
-    const DEFAULT_TEXTSIZE_CAPTION = 40;
-    const DEFAULT_TEXTSIZE_DESCRIPTION = 15;
-    const DEFAULT_BAR_HEIGHT = 75;
+    const DEFAULT_TEXTSIZE_CAPTION = 80;
+    const DEFAULT_TEXTSIZE_DESCRIPTION = 16;
+    const DEFAULT_BAR_HEIGHT = 120;
     const DEFAULT_BAR_BOTTOM = 30;
     const DEFAULT_BAR_PADDING = 10;
 
