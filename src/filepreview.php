@@ -97,7 +97,7 @@ class FilePreview {
 
         $instance = new self();
 
-        $image = $instance->renderPreview($filename, $width, $height);
+        $image = $instance->renderPreview($source, $width, $height);
 
         return $instance->output($image, $destination);
     }
