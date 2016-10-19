@@ -1,7 +1,7 @@
 {
     "name": "flyandi/filepreview",
     "type": "library",
-    "description": "Generates ",
+    "description": "Generates previews for various file formats and fallbacks",
     "keywords": [],
     "homepage": "https://github.com/flyandi/php-filepreview",
     "license": "MIT",
