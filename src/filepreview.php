@@ -229,7 +229,10 @@ class FilePreview {
         $barPadding = $this->__calcSize($referenceSize, self::DEFAULT_BAR_PADDING, $referenceDefault);
         $barHeight = $this->__calcSize($referenceSize, self::DEFAULT_BAR_HEIGHT, $referenceDefault);
         $barBottom = $this->__calcSize($referenceSize, self::DEFAULT_BAR_BOTTOM, $referenceDefault);
-        $barWidth = ($descriptionBox[2] - $descriptionBox[0]) + (2 * $barPadding);
+        $barWidth = ($descriptionBox[2] - $descriptionBox[0]) + (3 * $barPadding);
+        $barWidthCaption = ($captionBox[2] - $captionBox[0]) + (3 * $barPadding);
+
+        if($barWidthCaption > $barWidth) $barWidth = $barWidthCaption;
 
         // create bar
         imagefilledrectangle($image,
