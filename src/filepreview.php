@@ -78,9 +78,9 @@ class FilePreview {
      */
     const DEFAULT_WIDTH = 320;
     const DEFAULT_HEIGHT = 240;
-    const DEFAULT_TEXTSIZE_CAPTION = 80;
+    const DEFAULT_TEXTSIZE_CAPTION = 100;
     const DEFAULT_TEXTSIZE_DESCRIPTION = 16;
-    const DEFAULT_BAR_HEIGHT = 120;
+    const DEFAULT_BAR_HEIGHT = 160;
     const DEFAULT_BAR_BOTTOM = 30;
     const DEFAULT_BAR_PADDING = 10;
 
@@ -251,7 +251,7 @@ class FilePreview {
         imagettftext($image, $captionSize, 0, $x, $y, $backgroundColor, $font, $caption);
 
         // draw description
-        imagettftext($image, $descriptionSize, 0, $x, $y + $descriptionSize + ($barPadding/2), $backgroundColor, $font, $description);
+        imagettftext($image, $descriptionSize, 0, $x, $y + $descriptionSize + ($barPadding * 2), $backgroundColor, $font, $description);
 
         // return image
         return $image;
