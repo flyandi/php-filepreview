@@ -1,0 +1,55 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "d69d34f88c6a582b2add5d5c53b864f0",
+    "content-hash": "551e02bf1dcf50a19249505f98a342af",
+    "packages": [
+        {
+            "name": "flyandi/mime",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/flyandi/php-mime.git",
+                "reference": "2199b93fbbb6b04fb17472defd077c49472b8e15"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/flyandi/php-mime/zipball/2199b93fbbb6b04fb17472defd077c49472b8e15",
+                "reference": "2199b93fbbb6b04fb17472defd077c49472b8e15",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/mime.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andreas Schwarz",
+                    "email": "flyandi@yahoo.com"
+                }
+            ],
+            "description": "A quick and easy to use MimeType library that actually support descriptions",
+            "homepage": "https://github.com/flyandi/php-mime",
+            "time": "2016-10-19 01:46:31"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "flyandi/mime": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

@@ -1,0 +1,22 @@
+{
+    "name": "flyandi/filepreview",
+    "type": "library",
+    "description": "Generates ",
+    "keywords": [],
+    "homepage": "https://github.com/flyandi/php-filepreview",
+    "license": "MIT",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Andreas Schwarz",
+            "email": "flyandi@yahoo.com"
+        }
+    ],
+    "autoload": {
+        "files": ["src/filepreview.php"]
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "flyandi/mime": "dev-master"
+    }
+}
