@@ -5,6 +5,7 @@ include("../vendor/autoload.php");
 // create file preview
 $filePreview = new FilePreview();
 
+
 // render generic
 $image = $filePreview->renderGeneric(320, 240, "XLS", "Microsoft Excel", FilePreview::COLOR_BROWN, FilePreview::COLOR_WHITE);
 $filePreview->output($image, "output.xls.png");
@@ -21,21 +22,25 @@ $filePreview->output($image, "output.preview.png");
 $image = $filePreview->renderPreviewWithCaption("./preview.jpg", 320, 240, "JPG", "Mountains", FilePreview::COLOR_BLACK, FilePreview::COLOR_WHITE);
 $filePreview->output($image, "output.preview-caption.png");
 
-// render pdf
+// render file (pdf)
 $image = $filePreview->renderPreview("./test.pdf", 320, 240);
 $filePreview->output($image, "output.pdf.png");
 
-// render word (docx)
+// render file (docx)
 $image = $filePreview->renderPreview("./test.docx", 320, 240);
 $filePreview->output($image, "output.docx.png");
 
-// render word (doc)
+// render file (doc)
 $image = $filePreview->renderPreview("./test.doc", 320, 240);
 $filePreview->output($image, "output.doc.png");
 
-// render word (text)
+// render file (text)
 $image = $filePreview->renderPreview("./test.txt", 320, 240);
 $filePreview->output($image, "output.txt.png");
+
+// render file (csv)
+$image = $filePreview->renderPreview("./test.csv", 320, 240);
+$filePreview->output($image, "output.csv.png");
 
 
 

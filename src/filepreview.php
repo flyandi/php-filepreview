@@ -134,7 +134,9 @@ class FilePreview {
     public function renderPreview($filename, $width, $height) {
 
         // get mime
-        $mime = MimeTypeByFilename($filename);
+        $mime = MimeTypeByFileExtension($filename); 
+
+        if(!$mime) $mime = MimeTypeByFilename($filename);
 
         if(!$mime) return false;
 

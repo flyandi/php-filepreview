@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d69d34f88c6a582b2add5d5c53b864f0",
+    "hash": "fa16e642849a083e2b2ded21a063cbf2",
     "content-hash": "551e02bf1dcf50a19249505f98a342af",
     "packages": [
         {
@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/flyandi/php-mime.git",
-                "reference": "2199b93fbbb6b04fb17472defd077c49472b8e15"
+                "reference": "8289f196a1d7538e862c25b971485547690f73b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/flyandi/php-mime/zipball/2199b93fbbb6b04fb17472defd077c49472b8e15",
-                "reference": "2199b93fbbb6b04fb17472defd077c49472b8e15",
+                "url": "https://api.github.com/repos/flyandi/php-mime/zipball/8289f196a1d7538e862c25b971485547690f73b3",
+                "reference": "8289f196a1d7538e862c25b971485547690f73b3",
                 "shasum": ""
             },
             "type": "library",
@@ -39,7 +39,7 @@
             ],
             "description": "A quick and easy to use MimeType library that actually support descriptions",
             "homepage": "https://github.com/flyandi/php-mime",
-            "time": "2016-10-19 01:46:31"
+            "time": "2016-10-19 06:32:19"
         }
     ],
     "packages-dev": [],
