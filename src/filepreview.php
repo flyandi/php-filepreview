@@ -131,14 +131,17 @@ class FilePreview {
      * @param  [type] $height   [description]
      * @return [type]           [description]
      */
-    public function renderPreview($filename, $width, $height) {
+    public function renderPreview($filename, $width, $height, $mime = false) {
 
         // get mime
-        $mime = MimeTypeByFileExtension($filename); 
+        if(!$mime) {
+            
+            $mime = MimeTypeByFileExtension($filename); 
 
-        if(!$mime) $mime = MimeTypeByFilename($filename);
+            if(!$mime) $mime = MimeTypeByFilename($filename);
 
-        if(!$mime) return false;
+            if(!$mime) return false;
+        }
 
         // detect if this is an image
         if($image = @getimagesize($filename)) {
