@@ -3,3 +3,4 @@ application/vnd.ms-excel|41,115,63|255,255,255|XLT|Microsoft Excel
 application/vnd.ms-project|48,113,64|255,255,255|MPP|Microsoft Project
 application/msword|47,86,157|255,255,255|DOC|Microsoft Word
 application/vnd.openxmlformats-officedocument.wordprocessingml.document|47,86,157|255,255,255|DOC|Microsoft Word
+application/zip|163,51,200|255,255,255|ZIP|ZIP Archive
